@@ -1,7 +1,7 @@
 FROM node:20-slim
 
 WORKDIR code/app/testing_node
-COPY package*.json .
+COPY package*.json code/app/testing_node
 RUN npm ci
 COPY . .
 EXPOSE 5000
