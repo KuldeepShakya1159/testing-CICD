@@ -26,5 +26,5 @@ jobs:
         with: 
           context: .
           push: ${{ github.event_name == 'push' }}
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test_app:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/test_app:latest
     
